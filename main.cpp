@@ -26,7 +26,7 @@ void detectColor()
     Mat img,imgHSV,mask;
     int hmin = 0, smin = 0, vmin = 0;
     int hmax=179, smax=240,vmax=255;
-    string path = "colors.png"; // a dummy image with colors
+    string path = "colors.png"; // a dummy image for color detection
     img = imread(path);
     cvtColor(img,imgHSV, COLOR_BGR2HSV); //convert image to hsv scale
     namedWindow("Trackbars",(640,200));
